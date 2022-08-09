@@ -68,6 +68,8 @@ const main = async () => {
       resolvers: [HelloResolver, PostResolver, UserResolver],
       validate: false,
     }),
+    introspection: true,
+    playground: true,
     context: ({ req, res }) => ({
       req,
       res,
